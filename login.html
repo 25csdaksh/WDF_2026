@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudentHub Login - Access your student and faculty account.">
+  <title>Login - StudentHub Campus Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>StudentHub</h1>
+      <p>Integrated Campus Management & Student Portal</p>
+    </div>
+    <div class="header-actions">
+      <a href="login.html" class="btn btn-secondary">Login</a>
+      <a href="register.html" class="btn btn-primary">Register</a>
+    </div>
+  </header>
+
+  <nav class="primary-nav" aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li aria-current="page">Portal Login</li>
+    </ol>
+  </nav>
+
+  <div class="page-container">
+    <main id="main-content">
+      <section class="content-card" aria-labelledby="login-heading">
+        <h2 id="login-heading">Sign In to StudentHub</h2>
+        <p>Enter your enrollment number or username and password to access your dashboard.</p>
+        
+        <form action="dashboard.html" method="get" class="form-layout" style="margin-top: 1rem;">
+          <div class="form-group">
+            <label for="user-role">Select Role <span class="required-mark" aria-hidden="true">*</span></label>
+            <select id="user-role" name="role" required aria-required="true">
+              <option value="student">Student</option>
+              <option value="faculty">Faculty Member</option>
+              <option value="admin">Administrator</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="username">Enrollment No / User ID <span class="required-mark" aria-hidden="true">*</span></label>
+            <input type="text" id="username" name="username" required aria-required="true" placeholder="e.g. 23012011001">
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password <span class="required-mark" aria-hidden="true">*</span></label>
+            <input type="password" id="password" name="password" required aria-required="true" placeholder="Enter your password">
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <input type="checkbox" id="remember-me" name="remember_me">
+            <label for="remember-me" style="font-weight: normal; margin: 0;">Remember my credentials on this device</label>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-primary">Sign In</button>
+            <a href="register.html" style="margin-left: 1rem; font-size: 0.9rem;">New student? Register here.</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <aside class="sidebar" aria-label="Login Help">
+      <div class="widget">
+        <h3>Need Help?</h3>
+        <ul>
+          <li><a href="faq.html">Forgot Password?</a></li>
+          <li><a href="contact.html">Contact IT Helpdesk</a></li>
+          <li>Default Student password format: <code>Initials@BirthYear</code></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>
+        <h3>StudentHub Portal</h3>
+        <p>Empowering student education through digital collaboration.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2026 StudentHub Campus Portal. Practical 1 & 2 Implementation.</p>
+    </div>
+  </footer>
+</body>
+</html>

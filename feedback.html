@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Feedback - Submit suggestions and feedback for StudentHub and campus services.">
+  <title>Portal & Campus Feedback - StudentHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>StudentHub</h1>
+      <p>Integrated Campus Management & Student Portal</p>
+    </div>
+    <div class="header-actions">
+      <a href="login.html" class="btn btn-secondary">Login</a>
+      <a href="register.html" class="btn btn-primary">Register</a>
+    </div>
+  </header>
+
+  <nav class="primary-nav" aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="feedback.html" aria-current="page">Feedback</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li aria-current="page">Student Feedback</li>
+    </ol>
+  </nav>
+
+  <div class="page-container">
+    <main id="main-content">
+      <section class="content-card" aria-labelledby="feedback-heading">
+        <h2 id="feedback-heading">Student & Faculty Feedback Form</h2>
+        <p>Your feedback is valuable in helping us improve academic infrastructure, teaching quality, and digital portal services.</p>
+        
+        <form action="feedback.html" method="get" class="form-layout" style="margin-top: 1rem;">
+          <div class="form-group">
+            <label for="feedback-type">Feedback Category <span class="required-mark" aria-hidden="true">*</span></label>
+            <select id="feedback-type" name="feedback_type" required aria-required="true">
+              <option value="">-- Choose Category --</option>
+              <option value="portal">StudentHub Portal Usability & Accessibility</option>
+              <option value="academics">Academic Curriculum & Teaching</option>
+              <option value="labs">Laboratory Infrastructure</option>
+              <option value="campus">Campus Amenities & Cafeteria</option>
+              <option value="library">Library & Digital Resources</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="rating">Satisfaction Rating <span class="required-mark" aria-hidden="true">*</span></label>
+            <select id="rating" name="rating" required aria-required="true">
+              <option value="">-- Select Rating --</option>
+              <option value="5">5 - Excellent</option>
+              <option value="4">4 - Good</option>
+              <option value="3">3 - Average</option>
+              <option value="2">2 - Needs Improvement</option>
+              <option value="1">1 - Poor</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="feedback-comments">Your Suggestions / Feedback Comments <span class="required-mark" aria-hidden="true">*</span></label>
+            <textarea id="feedback-comments" name="comments" rows="5" required aria-required="true" placeholder="Share your suggestions, observations, or report any issues..."></textarea>
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.5rem;">
+            <input type="checkbox" id="anonymous-submission" name="is_anonymous">
+            <label for="anonymous-submission" style="font-weight: normal; margin: 0;">Submit anonymously without attaching student profile</label>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-primary">Submit Feedback</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <aside class="sidebar" aria-label="Feedback Policies">
+      <div class="widget">
+        <h3>Our Feedback Policy</h3>
+        <ul>
+          <li>All feedback is reviewed weekly by the Quality Assurance Committee.</li>
+          <li>Constructive suggestions directly shape upcoming portal updates.</li>
+          <li>Anonymous entries are treated with strict confidentiality.</li>
+        </ul>
+      </div>
+
+      <div class="widget">
+        <h3>Previous Improvements</h3>
+        <p>Thanks to student feedback, we introduced full keyboard navigation and high-contrast accessibility in this release!</p>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>
+        <h3>StudentHub Portal</h3>
+        <p>Empowering student education through digital collaboration.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2026 StudentHub Campus Portal. Practical 1 & 2 Implementation.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudentHub Registration - Sign up for student access.">
+  <title>Student Registration - StudentHub</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>StudentHub</h1>
+      <p>Integrated Campus Management & Student Portal</p>
+    </div>
+    <div class="header-actions">
+      <a href="login.html" class="btn btn-secondary">Login</a>
+      <a href="register.html" class="btn btn-primary">Register</a>
+    </div>
+  </header>
+
+  <nav class="primary-nav" aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li aria-current="page">Student Registration</li>
+    </ol>
+  </nav>
+
+  <div class="page-container">
+    <main id="main-content">
+      <section class="content-card" aria-labelledby="register-heading">
+        <h2 id="register-heading">New Student Registration</h2>
+        <p>Please fill out the form below with valid institutional credentials to create your student account.</p>
+        
+        <form action="login.html" method="get" class="form-layout" style="margin-top: 1rem;">
+          <div class="form-group">
+            <label for="enrollment-no">Enrollment Number <span class="required-mark" aria-hidden="true">*</span></label>
+            <input type="text" id="enrollment-no" name="enrollment_no" required aria-required="true" placeholder="e.g. 23012011001" pattern="[0-9]{11,12}">
+          </div>
+
+          <div class="form-group">
+            <label for="full-name">Full Name <span class="required-mark" aria-hidden="true">*</span></label>
+            <input type="text" id="full-name" name="full_name" required aria-required="true" placeholder="First Middle Last Name">
+          </div>
+
+          <div class="form-group">
+            <label for="email-address">Institutional Email Address <span class="required-mark" aria-hidden="true">*</span></label>
+            <input type="email" id="email-address" name="email" required aria-required="true" placeholder="student@studenthub.edu">
+          </div>
+
+          <div class="form-group">
+            <label for="department">Department / Branch <span class="required-mark" aria-hidden="true">*</span></label>
+            <select id="department" name="department" required aria-required="true">
+              <option value="">-- Select Department --</option>
+              <option value="CSE">Computer Science & Engineering</option>
+              <option value="IT">Information Technology</option>
+              <option value="ECE">Electronics & Communication</option>
+              <option value="ME">Mechanical Engineering</option>
+              <option value="CE">Civil Engineering</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="semester">Current Semester <span class="required-mark" aria-hidden="true">*</span></label>
+            <select id="semester" name="semester" required aria-required="true">
+              <option value="">-- Select Semester --</option>
+              <option value="1">Semester 1</option>
+              <option value="2">Semester 2</option>
+              <option value="3">Semester 3</option>
+              <option value="4">Semester 4</option>
+              <option value="5">Semester 5</option>
+              <option value="6">Semester 6</option>
+              <option value="7">Semester 7</option>
+              <option value="8">Semester 8</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="password">Create Password <span class="required-mark" aria-hidden="true">*</span></label>
+            <input type="password" id="password" name="password" required aria-required="true" minlength="8" placeholder="Minimum 8 characters">
+          </div>
+
+          <div class="form-group">
+            <label for="confirm-password">Confirm Password <span class="required-mark" aria-hidden="true">*</span></label>
+            <input type="password" id="confirm-password" name="confirm_password" required aria-required="true" minlength="8">
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+            <a href="login.html" style="margin-left: 1rem; font-size: 0.9rem;">Already registered? Login here.</a>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <aside class="sidebar" aria-label="Registration Instructions">
+      <div class="widget">
+        <h3>Registration Guidelines</h3>
+        <ul>
+          <li>Use your official university-issued email ID only.</li>
+          <li>Keep your enrollment slip ready for verification.</li>
+          <li>Passwords must contain at least 8 characters with letters and digits.</li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>
+        <h3>StudentHub Portal</h3>
+        <p>Empowering student education through digital collaboration.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2026 StudentHub Campus Portal. Practical 1 & 2 Implementation.</p>
+    </div>
+  </footer>
+</body>
+</html>

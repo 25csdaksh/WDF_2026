@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="StudentHub Admin Panel - Manage campus notices, student registrations, and portal configurations.">
+  <title>Admin Panel - StudentHub Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>StudentHub</h1>
+      <p>Integrated Campus Management & Student Portal</p>
+    </div>
+    <div class="header-actions">
+      <span style="font-size: 0.9rem; align-self: center;">Role: <strong>Campus Administrator</strong></span>
+      <a href="login.html" class="btn btn-secondary">Logout</a>
+    </div>
+  </header>
+
+  <nav class="primary-nav" aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="admin.html" aria-current="page">Admin</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li aria-current="page">Admin Control Center</li>
+    </ol>
+  </nav>
+
+  <div class="page-container">
+    <main id="main-content">
+      <section class="content-card" aria-labelledby="admin-summary">
+        <h2 id="admin-summary">Administrative Summary</h2>
+        <div class="grid-cards">
+          <article class="card">
+            <h3>Total Registered Students</h3>
+            <p style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">5,240</p>
+            <p>Active this semester</p>
+          </article>
+          <article class="card">
+            <h3>Pending Approvals</h3>
+            <p style="font-size: 1.5rem; font-weight: bold; color: var(--accent-color);">14</p>
+            <p>New admissions & certificates</p>
+          </article>
+          <article class="card">
+            <h3>Feedback Submissions</h3>
+            <p style="font-size: 1.5rem; font-weight: bold; color: var(--secondary-color);">38 New</p>
+            <p>Reviewed this week</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-card" aria-labelledby="manage-announcements">
+        <h2 id="manage-announcements">Publish New Campus Announcement</h2>
+        <form action="admin.html" method="get" class="form-layout">
+          <div class="form-group">
+            <label for="notice-title">Notice Title <span class="required-mark" aria-hidden="true">*</span></label>
+            <input type="text" id="notice-title" name="title" required aria-required="true" placeholder="e.g. Schedule for Campus Placement Drive">
+          </div>
+
+          <div class="form-group">
+            <label for="target-audience">Target Audience <span class="required-mark" aria-hidden="true">*</span></label>
+            <select id="target-audience" name="audience" required aria-required="true">
+              <option value="all">All Students & Faculty</option>
+              <option value="sem3">Semester 3 Only</option>
+              <option value="final-year">Final Year Students</option>
+              <option value="faculty">Faculty Members Only</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="notice-content">Notice Content <span class="required-mark" aria-hidden="true">*</span></label>
+            <textarea id="notice-content" name="content" rows="4" required aria-required="true" placeholder="Enter the official circular message..."></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-primary">Publish Circular</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="content-card" aria-labelledby="recent-registrations">
+        <h2 id="recent-registrations">Recent Student Registrations</h2>
+        <table class="data-table">
+          <caption>Pending verification records</caption>
+          <thead>
+            <tr>
+              <th scope="col">Enrollment</th>
+              <th scope="col">Student Name</th>
+              <th scope="col">Branch</th>
+              <th scope="col">Date</th>
+              <th scope="col">Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>23012011045</td>
+              <td>Aarav Mehta</td>
+              <td>CSE</td>
+              <td>Oct 08, 2026</td>
+              <td><button type="button" class="btn btn-primary" style="padding: 0.2rem 0.6rem; font-size: 0.8rem;">Approve</button></td>
+            </tr>
+            <tr>
+              <td>23012011046</td>
+              <td>Riya Shah</td>
+              <td>IT</td>
+              <td>Oct 08, 2026</td>
+              <td><button type="button" class="btn btn-primary" style="padding: 0.2rem 0.6rem; font-size: 0.8rem;">Approve</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <aside class="sidebar" aria-label="System Controls">
+      <div class="widget">
+        <h3>System Tools</h3>
+        <ul>
+          <li><a href="#backup">Database Backup</a></li>
+          <li><a href="#logs">System Access Logs</a></li>
+          <li><a href="#user-roles">Role Permissions</a></li>
+          <li><a href="#audit">WCAG Accessibility Audit</a></li>
+        </ul>
+      </div>
+
+      <div class="widget">
+        <h3>Server Status</h3>
+        <p><strong>System Health:</strong> 99.98%</p>
+        <p><strong>Last Sync:</strong> 5 mins ago</p>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>
+        <h3>StudentHub Portal</h3>
+        <p>Empowering student education through digital collaboration.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2026 StudentHub Campus Portal. Practical 1 & 2 Implementation.</p>
+    </div>
+  </footer>
+</body>
+</html>

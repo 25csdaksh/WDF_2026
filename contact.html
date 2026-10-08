@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact StudentHub - Reach out to academic departments and student support.">
+  <title>Contact Us - StudentHub Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>StudentHub</h1>
+      <p>Integrated Campus Management & Student Portal</p>
+    </div>
+    <div class="header-actions">
+      <a href="login.html" class="btn btn-secondary">Login</a>
+      <a href="register.html" class="btn btn-primary">Register</a>
+    </div>
+  </header>
+
+  <nav class="primary-nav" aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="profile.html">Profile</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li aria-current="page">Contact Us</li>
+    </ol>
+  </nav>
+
+  <div class="page-container">
+    <main id="main-content">
+      <section class="content-card" aria-labelledby="contact-heading">
+        <h2 id="contact-heading">Campus Directory & Helpdesk</h2>
+        <p>If you have any academic queries or technical issues with the StudentHub portal, get in touch with our team using the form or directory below.</p>
+        
+        <form action="contact.html" method="get" class="form-layout" style="margin-top: 1rem;">
+          <div class="form-group">
+            <label for="sender-name">Your Full Name <span class="required-mark" aria-hidden="true">*</span></label>
+            <input type="text" id="sender-name" name="name" required aria-required="true" placeholder="Enter your name">
+          </div>
+
+          <div class="form-group">
+            <label for="sender-email">Email Address <span class="required-mark" aria-hidden="true">*</span></label>
+            <input type="email" id="sender-email" name="email" required aria-required="true" placeholder="Enter your email">
+          </div>
+
+          <div class="form-group">
+            <label for="contact-category">Department to Contact <span class="required-mark" aria-hidden="true">*</span></label>
+            <select id="contact-category" name="category" required aria-required="true">
+              <option value="">-- Select Contact Department --</option>
+              <option value="academic">Academic Section</option>
+              <option value="exam">Examination Branch</option>
+              <option value="finance">Student Accounts & Fees</option>
+              <option value="it-support">IT Helpdesk & Portal Support</option>
+              <option value="hostel">Hostel & Student Welfare</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="query-subject">Subject <span class="required-mark" aria-hidden="true">*</span></label>
+            <input type="text" id="query-subject" name="subject" required aria-required="true" placeholder="Brief subject of your query">
+          </div>
+
+          <div class="form-group">
+            <label for="query-message">Detailed Message <span class="required-mark" aria-hidden="true">*</span></label>
+            <textarea id="query-message" name="message" rows="4" required aria-required="true" placeholder="Describe your query or problem in detail..."></textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <aside class="sidebar" aria-label="Campus Location and Office Hours">
+      <div class="widget">
+        <h3>Office Hours</h3>
+        <p><strong>Monday - Friday:</strong> 09:00 AM - 05:00 PM</p>
+        <p><strong>Saturday:</strong> 09:00 AM - 01:00 PM</p>
+        <p><strong>Sunday:</strong> Closed</p>
+      </div>
+
+      <div class="widget">
+        <h3>Campus Address</h3>
+        <address style="font-style: normal; font-size: 0.9rem;">
+          StudentHub Administrative Block,<br>
+          University Campus, Knowledge Corridor,<br>
+          Ahmedabad, Gujarat 380009<br>
+          <strong>Tel:</strong> +91 79 1234 5678
+        </address>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>
+        <h3>StudentHub Portal</h3>
+        <p>Empowering student education through digital collaboration.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2026 StudentHub Campus Portal. Practical 1 & 2 Implementation.</p>
+    </div>
+  </footer>
+</body>
+</html>

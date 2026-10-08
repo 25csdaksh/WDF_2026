@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student Profile - Personal and academic records on StudentHub.">
+  <title>Student Profile - StudentHub Portal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="brand">
+      <h1>StudentHub</h1>
+      <p>Integrated Campus Management & Student Portal</p>
+    </div>
+    <div class="header-actions">
+      <a href="dashboard.html" class="btn btn-secondary">Back to Dashboard</a>
+      <a href="login.html" class="btn btn-primary">Logout</a>
+    </div>
+  </header>
+
+  <nav class="primary-nav" aria-label="Main Navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="profile.html" aria-current="page">Profile</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="feedback.html">Feedback</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav class="breadcrumb" aria-label="Breadcrumb">
+    <ol>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dashboard.html">Dashboard</a></li>
+      <li aria-current="page">Student Profile</li>
+    </ol>
+  </nav>
+
+  <div class="page-container">
+    <main id="main-content">
+      <section class="content-card" aria-labelledby="personal-info">
+        <h2 id="personal-info">Personal & Academic Profile</h2>
+        <table class="data-table">
+          <caption>Student Information Record</caption>
+          <tbody>
+            <tr>
+              <th scope="row">Full Name</th>
+              <td>Daksh Patel</td>
+            </tr>
+            <tr>
+              <th scope="row">Enrollment Number</th>
+              <td>23012011001</td>
+            </tr>
+            <tr>
+              <th scope="row">Department</th>
+              <td>Computer Science & Engineering</td>
+            </tr>
+            <tr>
+              <th scope="row">Program</th>
+              <td>B.Tech (CSE) - 4 Year Degree</td>
+            </tr>
+            <tr>
+              <th scope="row">Semester / Year</th>
+              <td>Semester 3 (2nd Year)</td>
+            </tr>
+            <tr>
+              <th scope="row">Email Address</th>
+              <td>daksh.patel@studenthub.edu</td>
+            </tr>
+            <tr>
+              <th scope="row">Contact Number</th>
+              <td>+91 98765 01234</td>
+            </tr>
+            <tr>
+              <th scope="row">Academic Status</th>
+              <td><span style="color: #16a34a; font-weight: bold;">Active / Good Standing</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="content-card" aria-labelledby="edit-profile">
+        <h2 id="edit-profile">Update Contact Information</h2>
+        <form action="profile.html" method="get" class="form-layout">
+          <div class="form-group">
+            <label for="contact-phone">Phone Number <span class="required-mark" aria-hidden="true">*</span></label>
+            <input type="tel" id="contact-phone" name="phone" value="+91 98765 01234" required aria-required="true">
+          </div>
+
+          <div class="form-group">
+            <label for="residential-address">Residential Address <span class="required-mark" aria-hidden="true">*</span></label>
+            <textarea id="residential-address" name="address" rows="3" required aria-required="true">Campus Hostel Block-B, Room 304, University Campus</textarea>
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-primary">Save Profile Changes</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <aside class="sidebar" aria-label="Profile Assistance">
+      <div class="widget">
+        <h3>Official Documents</h3>
+        <ul>
+          <li><a href="#id-card">Download Digital ID Card</a></li>
+          <li><a href="#fee-receipt">Download Fee Receipt (Sem 3)</a></li>
+          <li><a href="#bonafide">Request Bonafide Certificate</a></li>
+        </ul>
+      </div>
+
+      <div class="widget">
+        <h3>Academic Mentor</h3>
+        <p><strong>Prof. Akshita Ma'am</strong></p>
+        <p>Department of Computer Science</p>
+        <p>Office: Room 204, Tech Building</p>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <div>
+        <h3>StudentHub Portal</h3>
+        <p>Empowering student education through digital collaboration.</p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="faq.html">FAQs</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2026 StudentHub Campus Portal. Practical 1 & 2 Implementation.</p>
+    </div>
+  </footer>
+</body>
+</html>
