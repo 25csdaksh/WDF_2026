@@ -49,17 +49,17 @@
         <div class="grid-cards">
           <article class="card">
             <h3>Attendance Status</h3>
-            <p style="font-size: 1.5rem; font-weight: bold; color: var(--secondary-color);">88.5%</p>
+            <p class="stat-value stat-secondary">88.5%</p>
             <p>Status: Eligible for Mid-Sem exams</p>
           </article>
           <article class="card">
             <h3>Registered Courses</h3>
-            <p style="font-size: 1.5rem; font-weight: bold; color: var(--primary-color);">6 Subjects</p>
+            <p class="stat-value stat-primary">6 Subjects</p>
             <p>Computer Science & Engineering</p>
           </article>
           <article class="card">
             <h3>Pending Tasks</h3>
-            <p style="font-size: 1.5rem; font-weight: bold; color: var(--accent-color);">2 Assignments</p>
+            <p class="stat-value stat-accent">2 Assignments</p>
             <p>Due within next 5 days</p>
           </article>
         </div>
@@ -67,48 +67,50 @@
 
       <section class="content-card" aria-labelledby="enrolled-courses">
         <h2 id="enrolled-courses">Enrolled Courses & Faculty Details</h2>
-        <table class="data-table">
-          <caption>List of Semester 3 Subjects</caption>
-          <thead>
-            <tr>
-              <th scope="col">Course Code</th>
-              <th scope="col">Subject Name</th>
-              <th scope="col">Faculty In-charge</th>
-              <th scope="col">Credits</th>
-              <th scope="col">Attendance</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>CS301</td>
-              <td>Web Development Fundamentals</td>
-              <td>Prof. Akshita Ma'am</td>
-              <td>4</td>
-              <td>92%</td>
-            </tr>
-            <tr>
-              <td>CS302</td>
-              <td>Data Structures & Algorithms</td>
-              <td>Dr. R. Sharma</td>
-              <td>5</td>
-              <td>86%</td>
-            </tr>
-            <tr>
-              <td>CS303</td>
-              <td>Database Management Systems</td>
-              <td>Prof. S. Joshi</td>
-              <td>4</td>
-              <td>89%</td>
-            </tr>
-            <tr>
-              <td>CS304</td>
-              <td>Discrete Mathematics</td>
-              <td>Dr. K. Patel</td>
-              <td>3</td>
-              <td>84%</td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-responsive">
+          <table class="data-table">
+            <caption>List of Semester 3 Subjects</caption>
+            <thead>
+              <tr>
+                <th scope="col">Course Code</th>
+                <th scope="col">Subject Name</th>
+                <th scope="col">Faculty In-charge</th>
+                <th scope="col">Credits</th>
+                <th scope="col">Attendance</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>CS301</td>
+                <td>Web Development Fundamentals</td>
+                <td>Prof. Akshita Ma'am</td>
+                <td>4</td>
+                <td>92%</td>
+              </tr>
+              <tr>
+                <td>CS302</td>
+                <td>Data Structures & Algorithms</td>
+                <td>Dr. R. Sharma</td>
+                <td>5</td>
+                <td>86%</td>
+              </tr>
+              <tr>
+                <td>CS303</td>
+                <td>Database Management Systems</td>
+                <td>Prof. S. Joshi</td>
+                <td>4</td>
+                <td>89%</td>
+              </tr>
+              <tr>
+                <td>CS304</td>
+                <td>Discrete Mathematics</td>
+                <td>Dr. K. Patel</td>
+                <td>3</td>
+                <td>84%</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
 
@@ -135,7 +137,7 @@
 
   <footer class="site-footer">
     <div class="footer-content">
-      <div>
+      <div class="footer-brand">
         <h3>StudentHub Portal</h3>
         <p>Empowering student education through digital collaboration.</p>
       </div>
@@ -149,8 +151,9 @@
       </nav>
     </div>
     <div class="copyright">
-      <p>&copy; 2026 StudentHub Campus Portal. Practical 1 & 2 Implementation.</p>
+      <p>&copy; 2026 StudentHub Campus Portal. Responsive Mobile-First Design.</p>
     </div>
   </footer>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

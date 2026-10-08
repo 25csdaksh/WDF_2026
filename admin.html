@@ -96,34 +96,36 @@
 
       <section class="content-card" aria-labelledby="recent-registrations">
         <h2 id="recent-registrations">Recent Student Registrations</h2>
-        <table class="data-table">
-          <caption>Pending verification records</caption>
-          <thead>
-            <tr>
-              <th scope="col">Enrollment</th>
-              <th scope="col">Student Name</th>
-              <th scope="col">Branch</th>
-              <th scope="col">Date</th>
-              <th scope="col">Action</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>23012011045</td>
-              <td>Aarav Mehta</td>
-              <td>CSE</td>
-              <td>Oct 08, 2026</td>
-              <td><button type="button" class="btn btn-primary" style="padding: 0.2rem 0.6rem; font-size: 0.8rem;">Approve</button></td>
-            </tr>
-            <tr>
-              <td>23012011046</td>
-              <td>Riya Shah</td>
-              <td>IT</td>
-              <td>Oct 08, 2026</td>
-              <td><button type="button" class="btn btn-primary" style="padding: 0.2rem 0.6rem; font-size: 0.8rem;">Approve</button></td>
-            </tr>
-          </tbody>
-        </table>
+        <div class="table-responsive">
+          <table class="data-table">
+            <caption>Pending verification records</caption>
+            <thead>
+              <tr>
+                <th scope="col">Enrollment</th>
+                <th scope="col">Student Name</th>
+                <th scope="col">Branch</th>
+                <th scope="col">Date</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>23012011045</td>
+                <td>Aarav Mehta</td>
+                <td>CSE</td>
+                <td>Oct 08, 2026</td>
+                <td><button type="button" class="btn btn-primary">Approve</button></td>
+              </tr>
+              <tr>
+                <td>23012011046</td>
+                <td>Riya Shah</td>
+                <td>IT</td>
+                <td>Oct 08, 2026</td>
+                <td><button type="button" class="btn btn-primary">Approve</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </section>
     </main>
 
@@ -148,7 +150,7 @@
 
   <footer class="site-footer">
     <div class="footer-content">
-      <div>
+      <div class="footer-brand">
         <h3>StudentHub Portal</h3>
         <p>Empowering student education through digital collaboration.</p>
       </div>
@@ -162,8 +164,9 @@
       </nav>
     </div>
     <div class="copyright">
-      <p>&copy; 2026 StudentHub Campus Portal. Practical 1 & 2 Implementation.</p>
+      <p>&copy; 2026 StudentHub Campus Portal. Responsive Mobile-First Design.</p>
     </div>
   </footer>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
