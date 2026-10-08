@@ -134,19 +134,50 @@ studenthub/
 
 ## Practical 2: Semantic HTML5 Pages with Accessibility-Ready Structure
 
-### Implementation Details:
-1. **Semantic HTML5 Tags Used:**
-   - `<header>`: Page banners, branding, and top metadata.
-   - `<nav>`: Primary site navigation, skip-to-content links, and breadcrumbs (`aria-label="Breadcrumb"`).
-   - `<main>`: Main landmark containing unique content for each page (`id="main-content"`).
-   - `<section>`: Thematic grouping of content with appropriate heading levels (`<h1>` to `<h3>`).
-   - `<article>`: Self-contained content such as notices, event cards, and FAQ items.
-   - `<aside>`: Contextual sidebars for announcements, related links, and guidelines.
-   - `<footer>`: Site credits, campus contacts, and secondary links.
+### 1. Key Questions & Analysis
 
-2. **Accessibility Features:**
-   - **Skip Link:** Direct jump to `<main id="main-content">` via keyboard tab.
-   - **Form Accessibility:** All inputs strictly paired with `<label for="...">`, required field indicators, and `aria-required="true"`.
-   - **Image Accessibility:** Descriptive `alt` attributes on all images.
-   - **Semantic Heading Hierarchy:** Single `<h1>` per page with sequential `<h2>` and `<h3>`.
-   - **ARIA Attributes:** `role="navigation"`, `aria-label`, `aria-current="page"` used appropriately.
+#### Q1: Are semantic tags such as `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, and `<footer>` used properly?
+- **Yes.** Every page uses standard HTML5 semantic elements rather than generic `<div>` containers:
+  - `<header>`: Contains portal branding and global action buttons.
+  - `<nav>`: Hosts main navigation, breadcrumbs (`aria-label="Breadcrumb"`), and footer links.
+  - `<main id="main-content">`: Designated as the primary landmark containing unique page content.
+  - `<section>`: Divides distinct topics with explicit heading levels.
+  - `<article>`: Encapsulates standalone items like notices, event cards, and FAQ entries.
+  - `<aside>`: Contains contextual widgets (quick links, emergency helplines, timetables).
+  - `<footer>`: Encapsulates copyright and secondary links.
+
+#### Q2: Are form labels, headings, image alt text, and navigation links accessible?
+- **Form Labels:** Every `<input>`, `<select>`, and `<textarea>` is explicitly linked to a `<label for="...">` with matching ID. Mandatory fields use `required` and `aria-required="true"`.
+- **Heading Hierarchy:** Each page contains exactly one `<h1>` tag, followed sequentially by `<h2>` and `<h3>` tags without skipping hierarchy.
+- **Image Alt Text:** All image assets include descriptive and meaningful `alt` text.
+- **Navigation Links:** Active pages are indicated programmatically using `aria-current="page"`, and internal anchor targets are verified.
+
+#### Q3: Is the page structure consistent across all pages?
+- **Yes.** All 11 pages follow an identical skeleton:
+  1. Skip-to-content landmark at the top.
+  2. Uniform site header and primary navigation bar.
+  3. Contextual breadcrumb bar.
+  4. Standard 2-column layout (main content + aside sidebar).
+  5. Consistent site footer with auxiliary navigation.
+
+---
+
+### 2. Intermediate & Advanced Extensions Implemented
+- **Intermediate Extension:** Breadcrumb navigation bar implemented across internal pages (`<nav class="breadcrumb" aria-label="Breadcrumb">`) to display hierarchical pathing.
+- **Advanced Extension:** Keyboard-friendly Skip-to-Content link (`<a href="#main-content" class="skip-link">Skip to main content</a>`) positioned at the top of the `<body>` that becomes visible on keyboard focus (`:focus`).
+
+---
+
+### 3. List of Implemented Semantic HTML5 Pages
+1. [index.html](file:///index.html) - Home / Campus Portal Landing Page
+2. [about.html](file:///about.html) - About Portal, Vision & Mission
+3. [register.html](file:///register.html) - Student Registration Form
+4. [login.html](file:///login.html) - Portal Authentication / Sign-in Form
+5. [dashboard.html](file:///dashboard.html) - Student Academic Dashboard & Course Table
+6. [events.html](file:///events.html) - Campus Activities, Hackathons & Event Cards
+7. [profile.html](file:///profile.html) - Student Profile & Information Update Form
+8. [contact.html](file:///contact.html) - Department Contact Directory & Helpdesk Query Form
+9. [admin.html](file:///admin.html) - Administrative Control Panel & Notice Publisher
+10. [faq.html](file:///faq.html) - Frequently Asked Questions & Knowledge Base
+11. [feedback.html](file:///feedback.html) - Student Feedback Submission Form
+
